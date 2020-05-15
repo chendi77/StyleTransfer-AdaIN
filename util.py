@@ -26,10 +26,7 @@ class Util:
 
     # 确保所有文件夹存在
     def ensure_working_dirs(self):
-        dir_list = [
-            self.opt.content_dir, self.opt.style_dir,
-            self.opt.checkpoints_dir, self.opt.result_dir
-        ]
+        dir_list = [self.opt.content_dir, self.opt.style_dir, self.opt.checkpoints_dir]
         for dir in dir_list:
             Util.ensure_dir(dir)
 
