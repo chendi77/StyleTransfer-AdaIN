@@ -72,7 +72,7 @@ class AdainNetwork(nn.Module):
     def create_network(opt, device):
         model = AdainNetwork(opt).to(device)
         if opt.model_path is not None:
-            weights = torch.load(opt.model_path)
+            weights = torch.load(opt.model_path, map_location=device)
             model.decoder.load_state_dict(weights)
         return model
 
