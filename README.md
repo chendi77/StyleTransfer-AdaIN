@@ -3,7 +3,7 @@
 机器学习课程作业，使用AdaIN实现图像风格迁移
 
 ## 运行测试
-python test.py -m ./checkpoints/0/decoder_0.pth -c ./content/lenna.jpg -s ./style/brushstrokes.jpg -r ./result.png
+python test.py -m ./decoder_160000.pth -c ./content/lenna.jpg -s ./style/brushstrokes.jpg -r ./result.png
 
 ## 训练
 python train.py --content_dir ./content --style_dir ./style
